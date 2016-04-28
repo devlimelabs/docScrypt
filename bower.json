@@ -1,6 +1,6 @@
 {
-  "name": "docScrypt-maybe",
-  "version": "0.0.0",
+  "name": "docScrypt",
+  "version": "0.0.1",
   "description": "A sugary text document sweet :p",
   "homepage": "https://github.com/angular/angular-seed",
   "license": "MIT",
@@ -9,6 +9,8 @@
     "angular-route": "~1.4.0",
     "angular-loader": "~1.4.0",
     "angular-mocks": "~1.4.0",
-    "html5-boilerplate": "~5.2.0"
+    "html5-boilerplate": "~5.2.0",
+    "quill": "^0.20.1",
+    "ngQuill": "ngquill#^1.4.4"
   }
 }

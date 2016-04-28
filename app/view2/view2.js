@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.view2', ['ngRoute'])
+angular.module('docScrypt.view2', ['ngRoute', 'ngQuill'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view2', {
