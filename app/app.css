@@ -28,3 +28,19 @@
   content: "";
   padding: 0;
 }
+
+html,
+body,
+.container,
+.container > div,
+#content-container,
+.advanced-wrapper {
+    height: 100%;
+}
+
+#tag-line {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    color: #777;
+}
