@@ -72,6 +72,7 @@
                 link: 'Link',
                 image: 'Image',
                 visitURL: 'Visit URL',
+                count: 'Count',
                 change: 'Change',
                 done: 'Done',
                 cancel: 'Cancel',
@@ -225,7 +226,10 @@
 
                     // init editor
                     editor = new Quill(element[0].querySelector('.advanced-wrapper .editor-container'), config);
-
+                    var counter = editor.addModule('counter', {
+                        container: '#counter',
+                        unit: 'word'
+                    });
                     // mark model as touched if editor lost focus
                     editor.on('selection-change', function (range) {
                         if (range) {
@@ -456,6 +460,7 @@
                             '</span>' +
                         '</div>' +
                         '<div class="editor-container"></div>' +
+                        '<div id="counter"></div>' +
                         '<input type="text" ng-model="modelLength" ng-if="required" ng-hide="true" ng-pattern="/^([2-9]|[1-9][0-9]+)$/">' +
                     '</div>' +
                 '</div>');

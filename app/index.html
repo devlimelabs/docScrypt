@@ -22,7 +22,7 @@
   <![endif]-->
 
   <div class="container">
-      <div ng-view></div>
+      <ng-quill-editor ng-model="message" toolbar="true" link-tooltip="true" image-tooltip="true" toolbar-entries="font size bold list bullet italic underline strike align color background link image" editor-required="true" required="" error-class="input-error"></ng-quill-editor>
   </div>
   <footer>
       <div class="footer-content">
@@ -38,8 +38,9 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/quill/dist/quill.min.js"></script>
-  <script src="bower_components/ngQuill/src/ng-quill.min.js"></script>
   <script src="app.js"></script>
+  <script src="components/quill_components/wordCount/wordCount.js"></script>
+  <script src="bower_components/ngQuill/src/ng-quill.js"></script>
   <script src="editor/editor.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
